@@ -248,8 +248,8 @@ int main() {
             printSet(node->lastpos);
             cout << "\t\t-\n";
         }
-        nodes.push(node->left);
         nodes.push(node->right);
+        nodes.push(node->left);
     }
 
     createDFA(positions, followpos, root->firstpos);
